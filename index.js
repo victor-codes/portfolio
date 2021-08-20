@@ -16,9 +16,7 @@ window.addEventListener("DOMContentLoaded", function () {
       if (e.target.checked) {
         document.documentElement.setAttribute("data-theme", "dark");
         localStorage.setItem("theme", "dark");
-        console.log("sjkdfjk");
       } else {
-        console.log("glaskjg");
         document.documentElement.setAttribute("data-theme", "light");
         localStorage.setItem("theme", "light");
       }
