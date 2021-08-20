@@ -5,7 +5,13 @@
 *::after {
     font: 62.5% 'Work Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
-    transition: 440ms;
+    transition: color 800ms;
+    transition: background 800ms;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 html {
@@ -131,6 +137,10 @@ a svg {
     padding: 8px 0;
 }
 
+#theme {
+    display: none;
+}
+
 .sun,
 .moon {
     fill: var(--mode-color);
@@ -164,15 +174,6 @@ a svg {
 }
 
 [data-theme="dark"] {
-    /* html {
-        background: #121212;
-    } */
-    /* 
-    .sun {
-        fill: #fff;
-    } */
-
-    /* :root { */
     --sun: block;
     --moon: none;
     --mode-color: #eee;
@@ -180,11 +181,6 @@ a svg {
     --text-color: #d7d7d7;
     --link-color: #d7d7d7;
     --heading_1_color: #f2f2f2;
-    /* } */
-    /* 
-    .moon {
-        display: none;
-    } */
 }
 
 [data-theme="light"] {
@@ -194,16 +190,4 @@ a svg {
     --text-color: #333;
     --link-color: #333;
     --mode-color: #121212;
-    /* 
-    html {
-        background: #f3f3f3;
-    }
-
-    .moon {
-        fill: #121212;
-    }
-
-    .sun {
-        display: none;
-    } */
 }
