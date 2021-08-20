@@ -7,7 +7,11 @@ window.addEventListener("DOMContentLoaded", function () {
     document.documentElement.setAttribute("data-theme", currentTheme);
     if (currentTheme === "dark ") {
       toggleSwitch.checked = true;
+    } else {
+      toggleSwitch.checked = false;
     }
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
   }
 
   toggleSwitch.addEventListener(
