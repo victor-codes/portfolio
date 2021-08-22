@@ -191,3 +191,34 @@ a svg {
     --link-color: #333;
     --mode-color: #121212;
 }
+
+@media screen and (min-width: 1920px) {
+    .style_wrapper {
+        max-width: 1440px;
+    }
+    .hero_image {
+        height: 600px;
+        width: 800px;
+    }
+    .hero_text {
+        max-width: 620px;
+    }
+    h1 {
+        font-size: 5.6rem;
+    }
+    .hero_text_p, .external_link a {
+        font-size: 2.4rem;
+    }
+    .external_link a svg {
+        width: 24px;
+    }
+    a svg {
+        margin-right: 10px;
+    }
+    .moon, .sun {
+        width: 32px;
+    }
+    .site_logo {
+        font-size: 3.2rem;
+    }
+}
