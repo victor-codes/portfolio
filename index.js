@@ -4,6 +4,7 @@ const btn = document.querySelector("button");
 
 window.addEventListener("DOMContentLoaded", function () {
   const toggleSwitch = document.querySelector("#theme");
+  const btn = document.querySelector(".logo");
   const currentTheme = localStorage.getItem("theme")
     ? localStorage.getItem("theme")
     : null;
@@ -11,6 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
     document.documentElement.setAttribute("data-theme", currentTheme);
     if (currentTheme === "dark ") {
       toggleSwitch.checked = true;
+      btn.setAttribute("aria-selected")
     } else {
       toggleSwitch.checked = false;
     }
@@ -49,11 +51,11 @@ a.forEach((a) => {
   });
 });
 
- btn.addEventListener("mouseover", () => {
-   cursor.style.transform = `scale(1.5)`;
-   cursor.style.opacity = 0.5;
- });
- btn.addEventListener("mouseout", () => {
-   cursor.style.transform = `scale(1)`;
-   cursor.style.opacity = 1;
- });
+btn.addEventListener("mouseover", () => {
+  cursor.style.transform = `scale(1.5)`;
+  cursor.style.opacity = 0.5;
+});
+btn.addEventListener("mouseout", () => {
+  cursor.style.transform = `scale(1)`;
+  cursor.style.opacity = 1;
+});
