@@ -213,7 +213,8 @@ a svg {
   }
 
   h1 {
-    font-size: 5.6rem;
+    font-size: 5rem;
+    line-height: 1.3;
   }
 
   .hero_text_p,
